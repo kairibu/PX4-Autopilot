@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# @name Gazebo alexis
+# @type Fixedwing
+#
+
+. ${R}etc/init.d/rc.fw_defaults
+
+PX4_SIMULATOR=${PX4_SIMULATOR:=gz}
+PX4_GZ_WORLD=${PX4_GZ_WORLD:=default}
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=alexis}
+
+param set-default SIM_GZ_EN 1
